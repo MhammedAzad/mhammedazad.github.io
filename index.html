@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Azad - Software Engineer Portfolio</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS for sending emails directly from JavaScript -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS with your public key
+            emailjs.init("YOUR_PUBLIC_KEY");
+        })();
+    </script>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">mohammed<span class="highlight">.</span></div>
+            <div class="nav-items">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <!-- Particle Background (will be added with JS) -->
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-animation="slide-in-left">
+                    <h4>Hi there! I'm</h4>
+                    <h1 class="neon-glow">Mohammed Azad</h1>
+                    <h2>Software Engineer</h2>
+                    <p>Building innovative solutions with code and creativity</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn primary-btn">View Projects</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+                    </div>
+                    <div class="social-icons">
+                        <a href="https://github.com/MhammedAzad" class="github tilt-element"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/share/1CdeKMenPM/?mibextid=qi2Omg" class="facebook tilt-element"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/shadowitis?igsh=MTNuYTMxbHFiYWhzYQ==" class="instagram tilt-element"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="profile-container" data-animation="slide-in-right">
+                    <div class="profile-card">
+                        <div class="profile-img" id="profile-image">
+                            <!-- Profile image will be here -->
+                            <img src="mohammed.jpg" alt="Mohammed Azad">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title" data-animation="fade-in">
+                <h2>About <span class="highlight">Me</span></h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text" data-animation="slide-in-left">
+                    <p>Hello! I'm Mohammed Azad, a dedicated Software Engineering student at Qaiwan International University. Currently, I'm in my first stage, first semester, where I'm building a strong foundation in computer science and software development principles.</p>
+                    <p>As an aspiring software engineer, I'm passionate about learning new technologies and applying them to solve real-world problems. I'm committed to growing my skills and knowledge throughout my academic journey and beyond.</p>
+                    
+                    <div class="skills">
+                        <h3>Skills & <span class="highlight">Expertise</span></h3>
+                        <div class="skill-tags">
+                            <span class="tilt-element">C++</span>
+                            <span class="tilt-element">HTML</span>
+                            <span class="tilt-element">CSS</span>
+                            <span class="tilt-element">JavaScript</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Download Resume button removed -->
+                </div>
+                <div class="about-stats" data-animation="slide-in-right">
+                    <div class="stat-card tilt-element">
+                        <h3>1</h3>
+                        <p>stage</p>
+                    </div>
+                    <div class="stat-card tilt-element">
+                        <h3>20</h3>
+                        <p>age</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-title" data-animation="fade-in">
+                <h2>My <span class="highlight">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card tilt-element" data-animation="scale-in">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            1
+                        </div>
+                        <h3>Project One</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>this is our first project</p>
+                        <div class="tech-stack">
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="project1.pdf" class="btn pdf-view" data-pdf="project1.pdf">View PDF</a>
+                        <a href="project1.pdf" class="btn pdf-download" data-pdf="project1.pdf">Download</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card tilt-element" data-animation="scale-in">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            2
+                        </div>
+                        <h3>Project Two</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>this is our second project</p>
+                        <div class="tech-stack">
+                           
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="project2.pdf" class="btn pdf-view" data-pdf="project2.pdf">View PDF</a>
+                        <a href="project2.pdf" class="btn pdf-download" data-pdf="project2.pdf">Download</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card tilt-element" data-animation="scale-in">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            3
+                        </div>
+                        <h3>Project Three</h3>
+                    </div>
+                    <div class="project-body">
+                        <p>this is our third project</p>
+                        <div class="tech-stack">
+                            
+                        </div>
+                    </div>
+                    <div class="project-footer">
+                        <a href="project3.pdf" class="btn pdf-view" data-pdf="project3.pdf">View PDF</a>
+                        <a href="project3.pdf" class="btn pdf-download" data-pdf="project3.pdf">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title">Project PDF</h3>
+            <div id="pdf-container">
+                <iframe id="pdf-iframe" src="" width="100%" height="500px"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-title" data-animation="fade-in">
+                <h2>Get In <span class="highlight">Touch</span></h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-animation="slide-in-left">
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="details">
+                            <h3>Email</h3>
+                            <p>maqiu240362@uniq.edu.iq</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="details">
+                            <h3>Phone</h3>
+                            <p>+964 770 801 8777</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="details">
+                            <h3>Location</h3>
+                            <p>Sulaymaniah, Iraq</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form glass-effect" data-animation="slide-in-right">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="user_name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="user_email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">Mohammed<span class="highlight">.</span></div>
+                <p>&copy; 2025 Mohammed Azad. All rights reserved.</p>
+                <!-- Social icons removed -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js.js"></script>
+</body>
+</html>
